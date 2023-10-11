@@ -29,7 +29,7 @@
 
 				<div class="texto-infos">
 					<span class="nome">Daniele Vargas</span>
-                    <span class="RM">Software Design</span>
+                    <span class="RM">Software Design e Data Quality</span>
                     <a href="https://www.linkedin.com/in/daniele-vargas-067999222/" target="_blank" class="linksLinkedin"> <i class="fa-brands fa-linkedin"></i> </a>
 				</div>
 			</div>
@@ -87,7 +87,26 @@
 			</div>
 
 		</div>
+
+        <div class="popup-img">
+            <span>&times;</span>
+            <img src="./imgs/Edu.jpg">
+        </div>
+
 	</section>
+
+    <script>
+        document.querySelectorAll('.div-cards img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-img').style.display = 'block';
+                document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+        })
+
+        document.querySelector('.popup-img span').onclick = () => {
+            document.querySelector('.popup-img').style.display = 'none';
+        }
+    </script>
 
 </body>
 
