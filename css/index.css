@@ -280,10 +280,12 @@ hr {
 	margin-top: 8px;
 	vertical-align: middle;
 	width: 100%;
+	transition: 1s;
   }
 
   .column img:hover {
 	transform: scale(1.25);
+	transition: 1s;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
