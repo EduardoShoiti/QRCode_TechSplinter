@@ -88,23 +88,107 @@
 
 		</div>
 
-        <div class="popup-img">
+        <div class="popup-img" id="perfilAmpliado">
             <span>&times;</span>
             <img src="./imgs/Edu.jpg">
         </div>
 
+		<hr>
+		
+		<div class="titGaleria">
+			<h3>Galeria</h3>
+			<p>Um projeto além dos códigos...</p>
+		</div>
+
+		<!-- Photo Grid -->
+		<div class="row">
+
+			<div class="column">
+				<!-- <a href="./imgs/Galeria/challenge_porto_fiap_2023.jpg" target="_blank"> -->
+					<img src="./imgs/Galeria/challenge_porto_fiap_2023.jpg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/img (5).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (5).jpeg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/Edu_Apresentacao.jpg" target="_blank"> -->
+					<img src="./imgs/Galeria/Edu_Apresentacao.jpg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/img (6).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (6).jpeg" style="width:100%">
+				<!-- </a> -->
+
+			</div>
+			<div class="column">
+				<!-- <a href="./imgs/Galeria/img (11).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (11).jpeg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/img (2).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (2).jpeg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/recado_final.jpg" target="_blank"> -->
+					<img src="./imgs/Galeria/recado_final.jpg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/img (3).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (3).jpeg" style="width:100%">
+				<!-- </a> -->
+			</div>  
+			<div class="column">
+				<!-- <a href="./imgs/Galeria/img (12).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (12).jpeg" style="width:100%">	
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/img (10).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (10).jpeg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/img (13).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (13).jpeg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/img (1).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (1).jpeg" style="width:100%">
+				<!-- </a> -->
+				
+				<!-- <a href="./imgs/Galeria/img (15).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (15).jpeg" style="width:100%">
+				<!-- </a> -->
+
+			</div>
+			<div class="column">
+				<!-- <a href="./imgs/Galeria/img (14).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (14).jpeg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/challenge_porto_fiap_2023-82.jpg" target="_blank"> -->
+					<img src="./imgs/Galeria/challenge_porto_fiap_2023-82.jpg" style="width:100%">
+				<!-- </a> -->
+
+				<!-- <a href="./imgs/Galeria/img (8).jpeg" target="_blank"> -->
+					<img src="./imgs/Galeria/img (8).jpeg" style="width:100%">
+				<!-- </a> -->
+
+			</div>
+		</div>
+
 	</section>
 
     <script>
+		// Fotos de perfil
         document.querySelectorAll('.div-cards img').forEach(image => {
             image.onclick = () => {
-                document.querySelector('.popup-img').style.display = 'block';
-                document.querySelector('.popup-img img').src = image.getAttribute('src');
+                document.querySelector('#perfilAmpliado').style.display = 'block';
+                document.querySelector('#perfilAmpliado img').src = image.getAttribute('src');
             }
         })
 
-        document.querySelector('.popup-img span').onclick = () => {
-            document.querySelector('.popup-img').style.display = 'none';
+        document.querySelector('#perfilAmpliado span').onclick = () => {
+            document.querySelector('#perfilAmpliado').style.display = 'none';
         }
     </script>
 
